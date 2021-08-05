@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+    <script src="addBlog.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="smallBook.jpg">
+    <link rel="stylesheet" href="simplyBlogStyles.css"></link>
+</head>
+<body>
+    <div class ="container">
+        <header class="blog-header py-3">
+            <div class="row items-center">
+                <div class="col-4 text-center" id="sideLines"></div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark">Simply Blogging</a>
+                </div>
+                <div class="col-4 text-center" id="sideLines"></div>
+            </div>
+        </header>
+        <nav class="navbar navbar-light" style="background-color: white;">
+            <div class="col-6 text-left">
+                <a class="p-2 text-muted" href="#" style="font-size: 28px;">Home</a>
+                <a class="p-2 text-muted" href="#">Discover</a>
+                <a class="p-2 text-muted" href="#">About Us</a>
+                <a class="p-2 text-muted" href="#">Contact Us</a>
+                <a class="p-2 text-muted" href="#">Login</a>
+            </div>
+            <div class="col-6 text-right">
+                <input style="font-size: 24px;" type="text"/>
+                <a class="p-2 text-muted" href="#">Search</a>
+            </div>
+        </nav>
+        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+            <div class="col-6 px-0">
+                <h1 class="display-4">Add blog:</h1>
+                <p class="stay">Interested in adding a new blog to our website? Feel free to type all of the information on the bottom and click on add. Happy blogging!</p>
+                <form>
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Title</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="title" aria-describedby="inputGroup-sizing-sm" id="title">
+                </div>
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Article</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="article" aria-describedby="inputGroup-sizing-sm" id="article">
+                </div>
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Image URL</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="image" aria-describedby="inputGroup-sizing-sm" id="image">
+                </div>
+                <button type="reset" class="btn btn-success" onclick="addBlog()">Add</button>
+                <input type="reset" class="btn btn-danger" value="Clear"/>
+                </form>
+                <div class="alert alert-success collapse" role="alert" id="alert">
+                    <strong>Success!</strong> Your blog successfully added to our website.
+                </div>
+            </div>
+        </div>
+        <div class="mainBody" id="mainBody">
+            <div class="media">
+            <img class="img-fluid" src="smallBook.jpg" alt="smallBook.jpg">
+            <div class="media-body">
+                <h5>Random Blog Title 1</h5>
+                <p>This is a placeholder definition for blog 1 and should be super long so that I can see how this all looks in one simple paragraph. This is only a test blog and will have no value what so ever to the project. This is just to see how the paragraph will look like. So I will copy and paste this message 3 more times!
+                    This is a placeholder definition for blog 1 and should be super long so that I can see how this all looks in one simple paragraph. This is only a test blog and will have no value what so ever to the project. This is just to see how the paragraph will look like. So I will copy and paste this message 3 more times!
+                    This is a placeholder definition for blog 1 and should be super long so that I can see how this all looks in one simple paragraph. This is only a test blog and will have no value what so ever to the project. This is just to see how the paragraph will look like. So I will copy and paste this message 3 more times!
+                    This is a placeholder definition for blog 1 and should be super long so that I can see how this all looks in one simple paragraph. This is only a test blog and will have no value what so ever to the project. This is just to see how the paragraph will look like. So I will copy and paste this message 3 more times!
+                </p>
+            </div>
+        </div>
+        <br/>
+        <div class="media">
+            <img class="img-fluid" src="smallBook.jpg" alt="smallBook.jpg">
+            <div class="media-body">
+                <h5>Random Blog Title 2</h5>
+                <p>This is a placeholder definition for blog 2 and should be medium so that I can see how this all looks in one simple paragraph. This is only a test blog and will have no value what so ever to the project. This is just to see how the paragraph will look like. So I will copy and paste this message 1 more time!
+                    This is a placeholder definition for blog 2 and should be medium so that I can see how this all looks in one simple paragraph. This is only a test blog and will have no value what so ever to the project. This is just to see how the paragraph will look like. So I will copy and paste this message 1 more time!
+                </p>
+            </div>
+        </div>
+        <br/>
+        <div class="media">
+            <img class="img-fluid" src="smallBook.jpg" alt="smallBook.jpg">
+            <div class="media-body">
+                <h5>Random Blog Title 3</h5>
+                <p>This is a placeholder definition for blog 3 and should be short so that I can see how this all looks into one simple paragraph.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<br/> <br/> <br/>
+<footer>
+    This was made by Jason Tang @ TCS
+</footer>
+</html>

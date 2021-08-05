@@ -1,0 +1,63 @@
+body {
+    background-color: #e3f2fd;
+}
+
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+  
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+    }
+  }
+#sideLines {
+    content:url(sideLines.png);
+}
+
+.media {
+    background-color: white;
+}
+
+h5 {
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+p.stay {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.img-fluid {
+    width: 256px;
+    height: 256px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    height: 4%;
+}
