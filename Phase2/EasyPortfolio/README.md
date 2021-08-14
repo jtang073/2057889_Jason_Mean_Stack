@@ -1,3 +1,33 @@
+# Easy Portfolio Format
+Login Page:
+![Login](/Phase2/EasyPortfolio/images/epLogin.png)
+
+
+Login Fail:
+![LoginFail](/Phase2/EasyPortfolio/images/epLoginFail.png)
+
+
+Registration Page:
+![Reg](/Phase2/EasyPortfolio/images/epReg.png)
+
+
+Registration Example(User: jasontang / Pass: 123)
+![RegEx](/Phase2/EasyPortfolio/images/epRegEx.png)
+
+
+Portfolio Page:
+![Portfolio](/Phase2/EasyPortfolio/images/epPort.png)
+
+
+Portfolio Contacts Example:
+![PortfolioEx](/Phase2/EasyPortfolio/images/epPortEx.png)
+
+
+Portfolio Contacts Table:
+![Table](/Phase2/EasyPortfolio/images/epPortTable.png)
+
+---
+
 # EasyPortfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
