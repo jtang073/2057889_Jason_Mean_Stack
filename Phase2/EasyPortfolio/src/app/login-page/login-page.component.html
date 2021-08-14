@@ -1,0 +1,61 @@
+<div style="color: white; font-size: 28px;" *ngIf="logged">
+    <h2  style="font-size: 48px; color: white; margin-top: 100px;">Login Form</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="checkUser()">
+        <label>Username: </label>
+        <input type="text" formControlName="user"/> <br/>
+        <label>Password: </label>
+        <input type="password" formControlName="pass"/> <br/>
+        <input type="submit" value="Login"/>
+    </form>
+    <br/> <br/>
+    <input style="font-size: 30px;" type="button" value="Sign up" (click)="changePage()"/>
+</div>
+
+<div style="color: white; font-size: 28px;" *ngIf="signed">
+    <h2  style="font-size: 48px; color: white; margin-top: 100px;">Registration Form</h2>
+    <form [formGroup]="signupRef" (ngSubmit)="addUser()">
+        <label>First Name: </label>
+        <input type="text" formControlName="fname"/> <br/>
+        <label>Last Name: </label>
+        <input type="text" formControlName="lname"/> <br/>
+        <label>Username: </label>
+        <input type="text" formControlName="user"/> <br/>
+        <label>Password: </label>
+        <input type="password" formControlName="pass"/> <br/>
+        <input style="margin-right: 15px;" type="submit" value="Register"/>
+        <input style="margin-left: 15px;" type="reset" value="Reset"/> <br/> <br/>
+        {{msg}}
+    </form>
+    <br/> <br/>
+    <input style="font-size: 30px;" type="button" value="Login" (click)="changePage()"/>
+</div>
+
+<div style="color: white; font-size: 28px;" *ngIf="portfolio">
+    <h2  style="font-size: 48px; color: white; margin-top: 100px;">My Portfolio</h2>
+    <p>Welcome to your portfolio, {{(loginRef.value).user}}</p>
+    <br/>
+    <p>Add a new contact:</p>
+    <form [formGroup]="portRef" (ngSubmit)="addContact()">
+        <label>Contact Name: </label>
+        <input type="text" formControlName="cname"/> <br/>
+        <label>Phone: </label>
+        <input type="text" formControlName="phone"/> <br/>
+        <input style="margin-right: 15px;" type="submit" value="Save"/> <br/> <br/>
+    </form>
+    <input style="font-size: 24px;" type="button" value="Contact Details" (click)="showContacts()"/>
+    <br/> <br/>
+    <div *ngIf="showing" style="text-align: center;">
+        <table border="1" style="margin: auto;">
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+            </tr>
+            <tr *ngFor="let c of allContacts">
+                <td>{{c.name}}</td>
+                <td>{{c.phone}}</td>
+            </tr>
+        </table>
+    </div>
+    <br/> <br/> <br/> <br/>
+    <input style="font-size: 30px;" type="button" value="Log Out" (click)="logOut()"/>
+</div>
