@@ -14,9 +14,14 @@ Updated Task List:
 Supports Dynamic Allocation of Tasks:
 ![List](/Phase2/TaskTracker/images/ttList.png)
 
+
+Supports Offline Mode from PWA:
+![PWA](/Phase2/TaskTracker/images/ttPWA.png)
+
+
 ---
 
-# TaskTrackera
+# TaskTracker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
