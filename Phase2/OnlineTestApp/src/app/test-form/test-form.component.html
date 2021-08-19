@@ -1,0 +1,57 @@
+<a id="top"></a>
+<div class="landing" *ngIf="!started">
+    <h2 style="font-size: 48px;">Online Test Application</h2>
+    
+    <h2 style="font-size: 24px;">Welcome to the TCS Mean Stack Test!</h2>
+    <p style="font-size: 18px;">You have unlimited time to complete this test that contains {{allQuestions.length}} questions.<br/>To begin, please click on the Start button.<br/>Good Luck!</p>
+    <button mat-raised-button color="primary" style="margin-right: 10px; background-color: limegreen;" (click)="startTest()">Start</button>
+</div>
+<div class="container" style="text-align: center;" *ngIf="started">
+    <h2 style="font-size: 48px; margin-top: 2%;">TCS Mean Stack Test</h2> <br/>
+    <div *ngIf="ended && passed" style="color: limegreen; font-size: 40px;">
+        {{status}}
+    </div>
+    <div *ngIf="ended && failed" style="color: red; font-size: 40px;">
+        {{status}}
+    </div>
+    <br/>
+    <hr/>
+    <div class="left"></div>
+    <div class="middle">
+    <form [formGroup]="myForm" (ngSubmit)="gradeTest()">
+        <div *ngFor="let q of allQuestions" style="padding: 3%; font-family: Arial; font-size: 16px;">
+            <div style="text-align: left;">
+            <p>{{q.id}}. {{q.question}}</p>
+            <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="a"/>
+            <label for="a" *ngIf="!graded"> {{q.a}}</label>
+            <label for="a" *ngIf="graded" [ngClass]="q.correct == 'a' ? 'correct' : 'wrong'">{{q.a}}</label>
+            <br/>
+            <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="b"/>
+            <label for="b" *ngIf="!graded"> {{q.b}}</label>
+            <label for="b" *ngIf="graded" [ngClass]="q.correct == 'b' ? 'correct' : 'wrong'">{{q.b}}</label>
+            <br/>
+            <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="c"/>
+            <label for="c" *ngIf="!graded"> {{q.c}}</label>
+            <label for="c" *ngIf="graded" [ngClass]="q.correct == 'c' ? 'correct' : 'wrong'">{{q.c}}</label>
+            <br/>
+            <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="d"/>
+            <label for="d" *ngIf="!graded"> {{q.d}}</label>
+            <label for="d" *ngIf="graded" [ngClass]="q.correct == 'd' ? 'correct' : 'wrong'">{{q.d}}</label>
+            <br/> <br/> <hr/>
+            </div>
+        </div>
+        <br/>
+        <button mat-raised-button color="primary" style="margin-right: 10px; background-color: limegreen;" type="submit" *ngIf="!ended" (click)="gradeTest()">Submit</button>
+        <button mat-raised-button color="warn" style="margin-right: 10px;" type="submit" *ngIf="ended" (click)="startTest()">Retry</button>
+    </form>
+    <br/> <br/> <br/> <br/>
+    </div>
+    <div class="right"></div>
+</div>
+
+<div class="score" *ngIf="ended && passed" style="color: springgreen;">
+    <p>Your total score was {{finalScore}}/{{allQuestions.length}} or {{finalPercent}}%</p>
+</div>
+<div class="score" *ngIf="ended && failed" style="color: red;">
+    <p>Your total score was {{finalScore}}/{{allQuestions.length}} or {{finalPercent}}%</p>
+</div>

@@ -1,0 +1,12 @@
+[
+    {"id":"1","question":"What is MEAN stack?","a":"Stacks who bully other stacks","b":"Microsoft, Edge, Angular, Node","c":"MongoDB, Express, Angular, Node","d":"Another name for Full Stack Developers","correct":"c"},
+    {"id":"2","question":"What is bootstrap used for?","a":"To create a good look and feel with front-end technology","b":"For database management","c":"Back-end technology for storing data","d":"Straps to keep your boots tight on your feet","correct":"a"},
+    {"id":"3","question":"What should you consider when building an application?","a":"Client/End-Users","b":"Finish the application as fast as possible","c":"What your friend says","d":"Don't think about anything, just code until it works","correct":"a"},
+    {"id":"4","question":"You find an error in your code. What should you do?","a":"Blame it on your boss","b":"Find and fix the bug","c":"Hide the error with more code","d":"Delete entire project and start over again","correct":"b"},
+    {"id":"5","question":"Which of the following languages are used in Angular?","a":"Typescript","b":"C, C++, and C#","c":"SQL","d":"Fortran","correct":"a"},
+    {"id":"6","question":"Which of the following items is used to write code?","a":"Microphone","b":"Headset","c":"Keyboard","d":"Graphics Card","correct":"c"},
+    {"id":"7","question":"Who usually gives out tests?","a":"Elderly people","b":"Students","c":"No one","d":"Teachers","correct":"d"},
+    {"id":"8","question":"There is a man walking down the street. He has 6 apples and decides to eat 2 apples on the way home. How many apples does he have left?","a":"1","b":"2","c":"3","d":"4","correct":"d"},
+    {"id":"9","question":"Which of the following does not match the others?","a":"Pear","b":"Banana","c":"Kiwi","d":"Truck","correct":"d"},
+    {"id":"10","question":"Who made this online test application?","a":"Jason Tang","b":"A random person","c":"The stranger you saw yesterday at McDonald","d":"No one","correct":"a"}
+]

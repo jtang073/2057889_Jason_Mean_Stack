@@ -1,0 +1,44 @@
+.landing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.middle {
+    width: 35%;
+    float: left;
+    height: 100vh;
+}
+.left,
+.right {
+    width: 32.5%;
+    float: left;
+    height: 100vh;
+}
+
+.score {
+	position: fixed;
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+    bottom: 0px;
+    margin-left: -20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 4%;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.correct {
+    background-color: limegreen;
+}
+
+.disabled {
+    pointer-events:none;
+}
