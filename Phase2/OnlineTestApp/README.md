@@ -16,11 +16,11 @@ Any Grades Below 70% is a FAIL:
 
 
 However, you can keep on retrying with the convenient button: 
-![Retry](/Phase2/OnlineTestApp/images/exRetry.png)
+![Retry](/Phase2/OnlineTestApp/images/examRetry.png)
 
 
 Grades that are 70% or higher is a PASS:
-![Pass](/Phase2/OnlineTestApp/images/exPass.png)
+![Pass](/Phase2/OnlineTestApp/images/examPass.png)
 
 ---
 
