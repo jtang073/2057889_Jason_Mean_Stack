@@ -3,27 +3,32 @@
 ---
 
 Index Page:
+
 ![Index](/Phase3/TaskPlanner/images/tpHome.png)
 
 ---
 
 Adding a new record (Task ID = 100):
+
 ![Add1](/Phase3/TaskPlanner/images/tpAdd1.png)
 
 ---
 
 Adding 2nd new record (Task ID = 101):
+
 ![Add2](/Phase3/TaskPlanner/images/tpAdd2.png)
 
 
 ---
 
 Error message when trying to add a new record with an already used Task ID (ex: 100):
+
 ![Error](/Phase3/TaskPlanner/images/tpError.png)
 
 ---
 
 Listing all tasks:
+
 ![List](/Phase3/TaskPlanner/images/tpList.png)
 
 ---
