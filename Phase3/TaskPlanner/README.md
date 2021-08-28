@@ -32,13 +32,20 @@ Listing all tasks:
 ![List](/Phase3/TaskPlanner/images/tpList.png)
 
 ---
+How the data looks like in JSON file on the backend:
+
+![JSON](/Phase3/TaskPlanner/images/tpJSON.png)
+
+---
 
 Deleting Task with ID = 100:
+
 ![Delete1](/Phase3/TaskPlanner/images/tpDelete1.png)
 
 ---
 
 List after deleting Task ID = 100:
+
 ![Delete2](/Phase3/TaskPlanner/images/tpDelete2.png)
 
 ---
