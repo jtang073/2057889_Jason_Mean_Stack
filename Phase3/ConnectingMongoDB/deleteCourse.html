@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Course</title>
+    <script>
+        function confirm() {
+            alert("Deletion command sent!");
+        }
+    </script>
+</head>
+<body>
+    <h2 style="font-size: 40px;">Delete Course</h2>
+    <form action="http://localhost:9090/deleteCourse">
+        <label>Course ID: </label>
+        <input type="text" name="cid" placeholder="Enter Unique Course ID"> <br/>
+        <input type="submit" value="Delete" onclick="confirm()">
+        <input type="reset" value="Reset"> <br/> <br/>
+        <a href="/">Back</a>
+    </form>
+</body>
+</html>
